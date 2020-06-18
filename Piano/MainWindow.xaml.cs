@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Piano
 {
@@ -31,106 +32,147 @@ namespace Piano
             switch (key)
             {
                 case Key.A:
-                    Uri aUri = new Uri("a.wav", UriKind.RelativeOrAbsolute);
+                    Uri aUri = new Uri("sounds/a.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayera = new MediaPlayer();
                     mediaPlayera.Open(aUri);
-                    mediaPlayera.Play();
+                    C3.Background = Brushes.Blue;
+                    mediaPlayera.Play();                     
+                    await Task.Delay(500);
+                    C3.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.S:
-                    Uri sUri = new Uri("s.wav", UriKind.RelativeOrAbsolute);
+                    Uri sUri = new Uri("sounds/s.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayers = new MediaPlayer();
                     mediaPlayers.Open(sUri);
-                    mediaPlayers.Play();
+                    D3.Background = Brushes.Red;
+                    mediaPlayers.Play();                     await Task.Delay(500);
+                    D3.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.D:
-                    Uri dUri = new Uri("d.wav", UriKind.RelativeOrAbsolute);
+                    Uri dUri = new Uri("sounds/d.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerd = new MediaPlayer();
                     mediaPlayerd.Open(dUri);
-                    mediaPlayerd.Play();
+                    E3.Background = Brushes.Green;
+                    mediaPlayerd.Play();                     await Task.Delay(500);
+                    E3.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.F:
-                    Uri fUri = new Uri("f.wav", UriKind.RelativeOrAbsolute);
+                    Uri fUri = new Uri("sounds/f.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerf = new MediaPlayer();
                     mediaPlayerf.Open(fUri);
-                    mediaPlayerf.Play();
+                    F3.Background = Brushes.Purple;
+                    mediaPlayerf.Play();                     await Task.Delay(500);
+                    F3.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.G:
-                    Uri gUri = new Uri("g.wav", UriKind.RelativeOrAbsolute);
+                    Uri gUri = new Uri("sounds/g.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerg = new MediaPlayer();
                     mediaPlayerg.Open(gUri);
-                    mediaPlayerg.Play();
+                    G3.Background = Brushes.Aqua;
+                    mediaPlayerg.Play();                     await Task.Delay(500);
+                    G3.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.H:
-                    Uri hUri = new Uri("h.wav", UriKind.RelativeOrAbsolute);
+                    Uri hUri = new Uri("sounds/h.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerh = new MediaPlayer();
                     mediaPlayerh.Open(hUri);
-                    mediaPlayerh.Play();
+                    A4.Background = Brushes.Chartreuse;
+                    mediaPlayerh.Play();                     await Task.Delay(500);
+                    A4.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.J:
-                    Uri jUri = new Uri("j.wav", UriKind.RelativeOrAbsolute);
+                    Uri jUri = new Uri("sounds/j.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerj = new MediaPlayer();
                     mediaPlayerj.Open(jUri);
-                    mediaPlayerj.Play();
+                    B4.Background = Brushes.DarkOrchid;
+                    mediaPlayerj.Play();                     await Task.Delay(500);
+                    B4.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.K:
-                    Uri kUri = new Uri("k.wav", UriKind.RelativeOrAbsolute);
+                    Uri kUri = new Uri("sounds/k.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerk = new MediaPlayer();
                     mediaPlayerk.Open(kUri);
-                    mediaPlayerk.Play();
+                    C4.Background = Brushes.Orange;
+                    mediaPlayerk.Play();                     await Task.Delay(500);
+                    C4.Background = Brushes.FloralWhite;
+
                     break;
                 case Key.L:
-                    Uri lUri = new Uri("l.wav", UriKind.RelativeOrAbsolute);
+                    Uri lUri = new Uri("sounds/l.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerl = new MediaPlayer();
                     mediaPlayerl.Open(lUri);
-                    mediaPlayerl.Play();
+                    D4.Background = Brushes.Thistle;
+                    mediaPlayerl.Play();                     await Task.Delay(500);
+                    D4.Background = Brushes.FloralWhite;
                     break;
-                case Key.OemSemicolon:
-                    Uri scUri = new Uri("sc.wav", UriKind.RelativeOrAbsolute);
-                    MediaPlayer mediaPlayersc = new MediaPlayer();
-                    mediaPlayersc.Open(scUri);
-                    mediaPlayersc.Play();
-                    break;
+                //case Key.OemSemicolon:
+                //    Uri scUri = new Uri("sounds/sc.wav", UriKind.RelativeOrAbsolute);
+                //    MediaPlayer mediaPlayersc = new MediaPlayer();
+                //    mediaPlayersc.Open(scUri);
+                //    mediaPlayersc.Play();                     await Task.Delay(500);
+                //    break;
                 case Key.W:
-                    Uri wUri = new Uri("w.wav", UriKind.RelativeOrAbsolute);
+                    Uri wUri = new Uri("sounds/w.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerw = new MediaPlayer();
                     mediaPlayerw.Open(wUri);
-                    mediaPlayerw.Play();
+                    Cs3.Background = Brushes.Coral;
+                    mediaPlayerw.Play();                     await Task.Delay(500);
+                    Cs3.Background = Brushes.Black;
                     break;
                 case Key.E:
-                    Uri eUri = new Uri("e.wav", UriKind.RelativeOrAbsolute);
+                    Uri eUri = new Uri("sounds/e.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayere = new MediaPlayer();
                     mediaPlayere.Open(eUri);
-                    mediaPlayere.Play();
+                    Ds3.Background = Brushes.PaleGreen;
+                    mediaPlayere.Play();                     await Task.Delay(500);
+                    Ds3.Background = Brushes.Black;
                     break;
                 case Key.T:
-                    Uri tUri = new Uri("t.wav", UriKind.RelativeOrAbsolute);
+                    Uri tUri = new Uri("sounds/t.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayert = new MediaPlayer();
                     mediaPlayert.Open(tUri);
-                    mediaPlayert.Play();
+                    Fs3.Background = Brushes.PaleTurquoise;
+                    mediaPlayert.Play();                     await Task.Delay(500);
+                    Fs3.Background = Brushes.Black;
                     break;
                 case Key.Y:
-                    Uri yUri = new Uri("y.wav", UriKind.RelativeOrAbsolute);
+                    Uri yUri = new Uri("sounds/y.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayery = new MediaPlayer();
                     mediaPlayery.Open(yUri);
-                    mediaPlayery.Play();
+                    Gs3.Background = Brushes.PaleVioletRed;
+                    mediaPlayery.Play();                     await Task.Delay(500);
+                    Gs3.Background = Brushes.Black;
                     break;
                 case Key.U:
-                    Uri uUri = new Uri("u.wav", UriKind.RelativeOrAbsolute);
+                    Uri uUri = new Uri("sounds/u.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayeru = new MediaPlayer();
                     mediaPlayeru.Open(uUri);
-                    mediaPlayeru.Play();
+                    As4.Background = Brushes.LightSeaGreen;
+                    mediaPlayeru.Play();                     await Task.Delay(500);
+                    As4.Background = Brushes.Black;
                     break;
                 case Key.O:
-                    Uri oUri = new Uri("o.wav", UriKind.RelativeOrAbsolute);
+                    Uri oUri = new Uri("sounds/o.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayero = new MediaPlayer();
                     mediaPlayero.Open(oUri);
-                    mediaPlayero.Play();
+                    Cs4.Background = Brushes.LightPink;
+                    mediaPlayero.Play();                     await Task.Delay(500);
+                    Cs4.Background = Brushes.Black;
                     break;
                 case Key.P:
-                    Uri pUri = new Uri("p.wav", UriKind.RelativeOrAbsolute);
+                    Uri pUri = new Uri("sounds/p.wav", UriKind.RelativeOrAbsolute);
                     MediaPlayer mediaPlayerp = new MediaPlayer();
                     mediaPlayerp.Open(pUri);
-                    mediaPlayerp.Play();
+                    Ds4.Background = Brushes.PaleGoldenrod;
+                    mediaPlayerp.Play();                     await Task.Delay(500);
+                    Ds4.Background = Brushes.Black;
                     break;
             }
         }
@@ -213,29 +255,38 @@ namespace Piano
             await PlayNote(Key.E);
         }
 
-        private async void Gs3_Click(object sender, RoutedEventArgs e)
+        private async void Fs3_Click(object sender, RoutedEventArgs e)
         {
             await PlayNote(Key.T);
         }
 
-        private async void As4_Click(object sender, RoutedEventArgs e)
+        private async void Gs3_Click(object sender, RoutedEventArgs e)
         {
             await PlayNote(Key.Y);
         }
 
-        private async void Bs4_Click(object sender, RoutedEventArgs e)
+        private async void As4_Click(object sender, RoutedEventArgs e)
         {
             await PlayNote(Key.U);
         }
 
-        private async void Ds4_Click(object sender, RoutedEventArgs e)
+        private async void Cs4_Click(object sender, RoutedEventArgs e)
         {
             await PlayNote(Key.O);
         }
 
-        private async void Es4_Click(object sender, RoutedEventArgs e)
+        private async void Ds4_Click(object sender, RoutedEventArgs e)
         {
             await PlayNote(Key.P);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to exit?", "Confirm exit?", MessageBoxButton.YesNo);
+            if(messageBoxResult == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
         }
     }
 }

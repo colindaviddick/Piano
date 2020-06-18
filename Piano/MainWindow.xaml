@@ -49,6 +49,7 @@
                     <TextBlock Text="Piano" FontSize="30" Margin="10" Foreground="White"/>
                 </Border>
             </StackPanel>
+            <Button Content="X" Height="20" Width="20" Grid.Column="2" Margin="5" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click"/>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
             <Button x:Name="C3" Style="{StaticResource WhiteKey}" Content="a" Click="C3_Click"/>
@@ -68,12 +69,12 @@
             <Button x:Name="Cs3" Style="{StaticResource BlackKey}" Content="w" Click="Cs3_Click"/>
             <Button x:Name="Ds3" Style="{StaticResource BlackKey}" Content="e" Click="Ds3_Click"/>
             <Button Style="{StaticResource PlaceHolder}"/>
-            <Button x:Name="Gs3" Style="{StaticResource BlackKey}" Content="t" Click="Gs3_Click"/>
-            <Button x:Name="As4" Style="{StaticResource BlackKey}" Content="y" Click="As4_Click"/>
-            <Button x:Name="Bs4" Style="{StaticResource BlackKey}" Content="u" Click="Bs4_Click"/>
+            <Button x:Name="Fs3" Style="{StaticResource BlackKey}" Content="t" Click="Fs3_Click"/>
+            <Button x:Name="Gs3" Style="{StaticResource BlackKey}" Content="y" Click="Gs3_Click"/>
+            <Button x:Name="As4" Style="{StaticResource BlackKey}" Content="u" Click="As4_Click"/>
             <Button Style="{StaticResource PlaceHolder}"/>
-            <Button x:Name="Ds4" Style="{StaticResource BlackKey}" Content="o" Click="Ds4_Click"/>
-            <Button x:Name="Es4" Style="{StaticResource BlackKey}" Content="p" Click="Es4_Click"/>
+            <Button x:Name="Cs4" Style="{StaticResource BlackKey}" Content="o" Click="Cs4_Click"/>
+            <Button x:Name="Ds4" Style="{StaticResource BlackKey}" Content="p" Click="Ds4_Click"/>
             <Button Style="{StaticResource PlaceHolder}"/>
             
         </StackPanel>

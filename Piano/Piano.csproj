@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="sc.wav">
+    <Resource Include="sounds\sc.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -20,52 +20,52 @@
     <None Update="%3b.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="a.wav">
+    <None Update="sounds\a.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="d.wav">
+    <None Update="sounds\d.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="e.wav">
+    <None Update="sounds\e.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="f.wav">
+    <None Update="sounds\f.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="g.wav">
+    <None Update="sounds\g.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="h.wav">
+    <None Update="sounds\h.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="j.wav">
+    <None Update="sounds\j.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="k.wav">
+    <None Update="sounds\k.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="l.wav">
+    <None Update="sounds\l.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="o.wav">
+    <None Update="sounds\o.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="p.wav">
+    <None Update="sounds\p.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="s.wav">
+    <None Update="sounds\s.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="t.wav">
+    <None Update="sounds\t.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="u.wav">
+    <None Update="sounds\u.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="w.wav">
+    <None Update="sounds\w.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="y.wav">
+    <None Update="sounds\y.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
