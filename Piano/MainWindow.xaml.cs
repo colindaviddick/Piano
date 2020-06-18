@@ -282,7 +282,7 @@ namespace Piano
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to exit?", "Confirm exit?", MessageBoxButton.YesNo);
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to exit?", "Confirm exit?", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if(messageBoxResult == MessageBoxResult.Yes)
             {
                 Application.Current.Shutdown();
