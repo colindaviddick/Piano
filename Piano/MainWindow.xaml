@@ -1,0 +1,81 @@
+﻿<Window x:Class="Piano.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Piano"
+        mc:Ignorable="d"
+        Title="Piano" Height="250" Width="400" KeyDown="Window_KeyDown" WindowStyle="None" ResizeMode="CanResizeWithGrip" Visibility="Visible" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="WhiteKey" TargetType="Button">
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+            <Setter Property="Background" Value="FloralWhite"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="BlackKey" TargetType="Button">
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Margin" Value="5 0 5 0"/>
+            <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="PlaceHolder" TargetType="Button">
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Margin" Value="5 0 5 0"/>
+            <Setter Property="Visibility" Value="Hidden"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
+                <Border Background="Blue" CornerRadius="20" Grid.Column="1" Margin="15">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="5" ShadowDepth="5"/>
+                    </Border.Effect>
+                    <TextBlock Text="Piano" FontSize="30" Margin="10" Foreground="White"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button x:Name="C3" Style="{StaticResource WhiteKey}" Content="a" Click="C3_Click"/>
+            <Button x:Name="D3" Style="{StaticResource WhiteKey}" Content="s" Click="D3_Click"/>
+            <Button x:Name="E3" Style="{StaticResource WhiteKey}" Content="d" Click="E3_Click"/>
+            <Button x:Name="F3" Style="{StaticResource WhiteKey}" Content="f" Click="F3_Click"/>
+            <Button x:Name="G3" Style="{StaticResource WhiteKey}" Content="g" Click="G3_Click"/>
+            <Button x:Name="A4" Style="{StaticResource WhiteKey}" Content="h" Click="A4_Click"/>
+            <Button x:Name="B4" Style="{StaticResource WhiteKey}" Content="j" Click="B4_Click"/>
+            <Button x:Name="C4" Style="{StaticResource WhiteKey}" Content="k" Click="C4_Click"/>
+            <Button x:Name="D4" Style="{StaticResource WhiteKey}" Content="l" Click="D4_Click"/>
+            <Button x:Name="E4" Style="{StaticResource WhiteKey}" Content=";" Click="E4_Click" IsEnabled="False"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Center">
+
+            <Button Style="{StaticResource PlaceHolder}" Content="a"/>
+            <Button x:Name="Cs3" Style="{StaticResource BlackKey}" Content="w" Click="Cs3_Click"/>
+            <Button x:Name="Ds3" Style="{StaticResource BlackKey}" Content="e" Click="Ds3_Click"/>
+            <Button Style="{StaticResource PlaceHolder}"/>
+            <Button x:Name="Gs3" Style="{StaticResource BlackKey}" Content="t" Click="Gs3_Click"/>
+            <Button x:Name="As4" Style="{StaticResource BlackKey}" Content="y" Click="As4_Click"/>
+            <Button x:Name="Bs4" Style="{StaticResource BlackKey}" Content="u" Click="Bs4_Click"/>
+            <Button Style="{StaticResource PlaceHolder}"/>
+            <Button x:Name="Ds4" Style="{StaticResource BlackKey}" Content="o" Click="Ds4_Click"/>
+            <Button x:Name="Es4" Style="{StaticResource BlackKey}" Content="p" Click="Es4_Click"/>
+            <Button Style="{StaticResource PlaceHolder}"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>
